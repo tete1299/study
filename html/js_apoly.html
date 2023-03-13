@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>title</title>
+    </head>
+    <body>
+        <div id="dev-1" onClick="alert('div-1 태그입니다')">div-1 태그</div>
+        <input id="button-1" type="button" value="button-1 버튼" onClick="alert('div-1 버튼 태그입니다')">
+        <div id="div-2"  >div-2 태그</div>
+        <input id="button-2" type="button" value="button-2 버튼">
+    </body>
+    <script>
+        document.getElementById("div-2").onclick = () => {
+            alert("div-2 태그입니다")
+        }
+        document.getElementById("button-2").onclick = () => {
+            alert("button 태그입니다")
+        }
+    </script>
+</html>

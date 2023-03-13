@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>title</title>
+    </head>
+    <body>
+    </body>
+    <script>
+        function func_1() {
+            console.log('func_a 에서 실행')
+        }
+        const func_2 = () => {
+            console.log('func_2 에서 실행')
+        }
+        
+        const getSententce = (sentence) => {
+            console.log('입력받은 문장은' +sentence+ '입니다')
+        }
+
+        const returnSentence = () => {
+            return '반갑습니다'
+        } 
+        func_1();
+        func_2();
+        getSententce('우와')
+        console.log(returnSentence())        
+    </script>
+</html>

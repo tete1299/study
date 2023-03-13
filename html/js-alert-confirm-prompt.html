@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>title</title>
+    </head>
+    <body>
+        <input id="button-1" type="button" value="button-1 버튼" onClick="alert('div-1 버튼 태그입니다')">
+       <input type="text" id="text-box1">
+    </body>
+    <script>
+        document.getElementById("button-1").onclick = () => {
+            // alert("안녕하세요")
+            // if(confirm('강의를 완강하고 싶으신가요?')){
+            //     alert("화이팅입니다");
+            // }
+            // else {
+            //     alert("아이코")
+            // }
+            let result = prompt('나이를 입력해 주세요');
+            alert("당신의 나이는 "+ result + '살 입니다');
+        }
+
+        document.getElementById('text-box1').onchange = (event) => {
+            console.log(event.target.value)
+        }
+    </script>
+</html>
